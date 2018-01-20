@@ -102,8 +102,10 @@ def all_holidays_with_bbq(holiday_hash)
   bbq = []
 holiday_hash.each {|season, hash|
   hash.each {|holiday, supplies|
-    if supplies.include? ("BBQ")
-      bbq << supplies.key("BBQ")
+  supplies.each {|x|
+    if x.include? ("BBQ")
+      bbq << x.key("BBQ")
+      }
   }
 }
 bbq
