@@ -105,6 +105,7 @@ holiday_hash.each {|season, hash|
   supplies.each {|x|
     if x.include? ("BBQ")
       bbq << x.key("BBQ")
+    end
       }
   }
 }
