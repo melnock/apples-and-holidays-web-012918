@@ -103,8 +103,13 @@ def all_holidays_with_bbq(holiday_hash)
 holiday_hash.each {|season, hash|
   hash.each {|holiday, supplies|
   supplies.each {|x|
+  i=0
+  while i<supplies.length
     if x.include? ("BBQ")
-      bbq << hash.key(["BBQ"])
+      bbq << hash.key(supplies[i])
+      i+=1
+    else
+      i+=1
     end
       }
   }
