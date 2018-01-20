@@ -111,6 +111,7 @@ holiday_hash.each {|season, hash|
     else
       i+=1
     end
+  end
       }
   }
 }
